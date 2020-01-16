@@ -1,0 +1,15 @@
+- hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+
+    - name: Fetch Instance Info
+      os_server_facts:
+        cloud: ospcloud
+        region_name: RegionOne
+      register: r_os_servers
+
+    - name: debug register
+      debug:
+        var: r_os_servers

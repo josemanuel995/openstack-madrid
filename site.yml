@@ -16,4 +16,15 @@
   tags:
     - stage3
     - deploy_instances
+- name: 'STAGE 4: Generate inventory'
+  import_playbook: playbooks/4_generate_inventory.yml
+  tags:
+    - stage4
+    - generate_inventory
+
+- name: 'STAGE 5: Deploy 3Tier App'
+  import_playbook: playbooks/5_deploy_3tier_app.yml
+  tags:
+    - stage5
+    - deploy_three_tier_app
 ...

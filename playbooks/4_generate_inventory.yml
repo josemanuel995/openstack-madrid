@@ -1,6 +1,6 @@
 ---
 - name: Generate openstack in-memory inventory
-  hosts: jumpbox
+  hosts: control_node
   gather_facts: false
   tags:
     - stage4

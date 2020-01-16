@@ -1,6 +1,6 @@
 ---
 - name: Setup workstation for OpenStack
-  hosts: jumpbox
+  hosts: control_node
   become: yes
   gather_facts: false
   tags:

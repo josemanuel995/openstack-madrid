@@ -1,10 +1,10 @@
 ---
 - name: Setup OSP instances
-  hosts: jumpbox
+  hosts: control_node
   gather_facts: false
   tags:
     - stage3
 
   roles:
-    - tok-instances
+    - osp-instances
 ...

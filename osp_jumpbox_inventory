@@ -1,2 +1,5 @@
 [jumpbox]
 localhost
+
+[jumpbox]
+ansible_connection = localhost
